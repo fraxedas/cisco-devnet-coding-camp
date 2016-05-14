@@ -14,5 +14,22 @@
 				res.send(results);
 			});
 		});
+
+		app.all("/rooms/:roomId", function (req, res) {
+			var roomId = req.params.roomId;
+			sparky.message.get(roomId, function (err, results) {
+				res.send({ error: err, result: results });
+			});
+		});
+
+		app.all("/rooms/:roomId/:text", function (req, res) {
+			var roomId = req.params.roomId;
+			var text = req.params.text;
+			sparky.message.send.room(roomId, {
+				text: text
+			}, function (err, results) {
+				res.send({ error: err, result: results });
+			});
+		});
 	};
 })(module.exports);
