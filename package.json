@@ -21,6 +21,7 @@
     "express": "^4.13.4",
     "http": "0.0.0",
     "node-persist": "0.0.11",
+    "node-sparky": "^2.0.26",
     "vash": "^0.11.3"
   },
   "devDependencies": {
