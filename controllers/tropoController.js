@@ -4,13 +4,14 @@
     persist.initSync();
 
     tropoController.init = function (app) {
-        app.all("/tropo/call", function (req, res) {
+        app.post("/tropo/call", function (req, res) {
+            var session = req.body.session;
             res.send({
                 "tropo": [
                     {
                         "call": {
                             "to": [
-                                "6479716879"
+                                session.parameters.numberToDial
                             ]
                         }
                     },
