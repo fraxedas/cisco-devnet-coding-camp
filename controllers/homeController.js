@@ -17,7 +17,7 @@
 
 		app.all("/rooms/:roomId", function (req, res) {
 			var roomId = req.params.roomId;
-			sparky.message.get(roomId, function (err, results) {
+			sparky.messages.get(roomId, 10, function (err, results) {
 				res.send({ error: err, result: results });
 			});
 		});
