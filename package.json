@@ -11,14 +11,13 @@
     "url": "git+https://github.com/fraxedas/cisco-devnet-coding-camp.git"
   },
   "author": "Oscar Fraxedas <fraxedas@gmail.com> (https://github.com/fraxedas)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fraxedas/cisco-devnet-coding-camp/issues"
   },
   "homepage": "https://github.com/fraxedas/cisco-devnet-coding-camp#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
-    "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
     "http": "0.0.0",
     "node-persist": "0.0.11",
