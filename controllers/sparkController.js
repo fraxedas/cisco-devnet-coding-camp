@@ -1,10 +1,10 @@
 (function (sparkController) {
 	sparkController.init = function (app) {
 
+		var data = require('../data');
 		var Sparky = require('node-sparky');
-
-		var sparky = new Sparky({ token: 'NDEyZmJlOWQtZWI1MS00YzUwLWI5ZmQtYjRhMmRkZDYxNzliNjAwOGVkMjUtYzc0' });
-
+		var sparky = new Sparky({ token: data.sparkToken });
+		
 		app.get("/spark", function (req, res) {
 			sparky.rooms.get(function (err, results) {
 				res.send(results);

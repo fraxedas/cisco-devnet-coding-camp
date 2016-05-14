@@ -4,6 +4,10 @@
     persist.initSync();
 
     tropoController.init = function (app) {
+        
+        
+        
+        //https://www.tropo.com/docs/rest/tutorials/starting-session-webapi
         app.post("/tropo/call", function (req, res) {
             var session = req.body.session;
             res.send({
