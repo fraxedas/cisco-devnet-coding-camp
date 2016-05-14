@@ -6,7 +6,22 @@
     tropoController.init = function (app) {
         app.all("/tropo/call", function (req, res) {
             res.send({
-                "tropo": [{ "say": { "value": "Guess what? https://www.tropo.com/docs/troporocks.mp3" } }]
+                "tropo": [
+                    {
+                        "call": {
+                            "to": [
+                                "6479716879"
+                            ]
+                        }
+                    },
+                    {
+                        "say": [
+                            {
+                                "value": "Remember, you have a meeting at 2 PM"
+                            }
+                        ]
+                    }
+                ]
             });
         });
 
