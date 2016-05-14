@@ -12,7 +12,7 @@
 
         app.all("/tropo/sms", function (req, res) {
             res.send({
-                "tropo": [{ "say": { "value": "everything is fine" } }]
+                "tropo": [{ "say": { "value": "Really, it's that easy." } }]
             });
         });
     };
