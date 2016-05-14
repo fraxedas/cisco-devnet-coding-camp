@@ -11,7 +11,9 @@
         });
 
         app.all("/tropo/sms", function (req, res) {
-            res.send({ message: "I'm alive" });
+            res.send({
+                "tropo": [{ "say": { "value": "everything is fine" } }]
+            });
         });
     };
 })(module.exports);
