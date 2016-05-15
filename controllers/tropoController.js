@@ -5,8 +5,6 @@
 
     tropoController.init = function (app) {
         
-        
-        
         //https://www.tropo.com/docs/rest/tutorials/starting-session-webapi
         app.post("/tropo/call", function (req, res) {
             var session = req.body.session;
@@ -22,7 +20,7 @@
                     {
                         "say": [
                             {
-                                "value": "Remember, you have a meeting at 2 PM"
+                                "value": "You have initiated an SoS call. Do you want to cancel it?"
                             }
                         ]
                     }
