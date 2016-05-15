@@ -4,7 +4,7 @@
     var request = require('request');
 
     var job = new CronJob({
-        cronTime: '* * * * * *', //Todo: Fix the pattern to run every hour
+        cronTime: '1 1 1 * * *', //Todo: Fix the pattern to run every hour
         onTick: function () {
             console.log("calling zeus");
             var log = {logs: [{"name": "health", "value": "OK" }]};

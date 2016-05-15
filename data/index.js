@@ -1,12 +1,12 @@
 (function (data) {
     data.caregiver = {
             name: "Shayak Dutta",
-            phone: "6479907435"
+            phone: "6479905555"
     };
 
     data.patient = {
         name: "Oscar Fraxedas",
-        phone: "6479716879",
+        phone: "6479715555",
         location: "123 Sesame St, Toronto, ON M1W, Canada",
         notes: "Type 1 diabetes, allergic to tylenol and very grouchy"
     };
