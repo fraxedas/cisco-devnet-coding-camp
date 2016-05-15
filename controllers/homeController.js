@@ -8,14 +8,14 @@
 		var request = require('request');
 
 		app.get("/", function (req, res) {
-			res.send({ name: "Oscar & Shayak" });
+			res.send({ name: "Nava, Jas, Shayak and Oscar" });
 		});
 
 		app.get("/sos", function (req, res) {
-			var details = data.patient;
+			var patient = data.patient;
 
 			var roomId = data.roomId;
-			var text = details.name + " has initiated an SoS call";
+			var text = patient.name + " has initiated an SoS call. Medic history: " + patient.notes + ". Address: " + patient.location;
 
 			sparky.message.send.room(roomId, { text: text }, function (err, results) {
 

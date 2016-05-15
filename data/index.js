@@ -1,14 +1,14 @@
 (function (data) {
     data.caregiver = {
             name: "Shayak Dutta",
-            phone: "6479716879",//"6479907435"
-            location: "123 Sesame St, Toronto, ON M1W, Canada"
+            phone: "6479907435"
         };
 
     data.patient = {
         name: "Oscar Fraxedas",
         phone: "6479716879",
-        location: "123 Sesame St, Toronto, ON M1W, Canada"
+        location: "123 Sesame St, Toronto, ON M1W, Canada",
+        notes: "Type 1 diabetes, allergic to tylenol and very grouchy"
     };
 
     data.details = function (id) {
