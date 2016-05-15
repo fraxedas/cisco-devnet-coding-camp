@@ -2,6 +2,7 @@
 
     var persist = require('node-persist');
     persist.initSync();
+    var data = require('../data');
 
     tropoController.init = function (app) {
 
@@ -21,7 +22,7 @@
                     {
                         "say": [
                             {
-                                "value": "You have initiated an SoS call. Do you want to cancel it?"
+                                "value": "Hello" + data.patient.name + ". You have initiated an SoS call. Do you want to cancel it?"
                             }
                         ]
                     }
@@ -40,7 +41,7 @@
                             "network": "SMS"
                         }
                     },
-                    { "say": { "value": "Tag, you're it!" } }
+                    { "say": { "value": session.parameters.msg } }
                 ]
             });
         });

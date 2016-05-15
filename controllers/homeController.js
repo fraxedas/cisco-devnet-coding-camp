@@ -21,7 +21,8 @@
 
 				var sms = {
 					token: data.tropoSmsToken,
-					numberToDial: data.caregiver.phone
+					numberToDial: data.caregiver.phone,
+					msg: text
 				};
 				var smsOptions = {
 					url: data.tropoUrl,
@@ -64,7 +65,8 @@
 
 				var sms = {
 					token: data.tropoSmsToken,
-					numberToDial: data.caregiver.phone
+					numberToDial: data.caregiver.phone,
+					msg: text
 				};
 				var smsOptions = {
 					url: data.tropoUrl,
