@@ -31,6 +31,7 @@
 
         app.all("/tropo/sms", function (req, res) {
             console.log(req.body);
+            var session = req.body.session;
             res.send({
                 "tropo": [
                     {
