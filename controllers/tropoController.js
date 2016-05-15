@@ -4,7 +4,7 @@
     persist.initSync();
 
     tropoController.init = function (app) {
-        
+
         //https://www.tropo.com/docs/rest/tutorials/starting-session-webapi
         app.post("/tropo/call", function (req, res) {
             console.log(req.body);
@@ -32,7 +32,15 @@
         app.all("/tropo/sms", function (req, res) {
             console.log(req.body);
             res.send({
-                "tropo": [{ "say": { "value": "Really, it's that easy." } }]
+                "tropo": [
+                    {
+                        "call": {
+                            "to": session.parameters.numberToDial,
+                            "network": "SMS"
+                        }
+                    },
+                    { "say": { "value": "Tag, you're it!" } }
+                ]
             });
         });
     };
