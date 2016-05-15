@@ -22,7 +22,7 @@
                     {
                         "say": [
                             {
-                                "value": "Hello" + data.patient.name + ". You have initiated an SoS call. Do you want to cancel it?"
+                                "value": "Hello" + data.patient.name + ". You have initiated an SoS call. Help is on the way?"
                             }
                         ]
                     }

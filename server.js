@@ -22,6 +22,10 @@ app.use(express.static(__dirname + "/public"));
 //Setup the routes
 controllers.init(app);
 
+//Setup the schedule
+var schedule = require("./schedule");
+schedule.init();
+
 //Create the server
 var server = http.createServer(app);
 
